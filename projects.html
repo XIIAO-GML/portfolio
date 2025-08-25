@@ -1,0 +1,124 @@
+<section class="projects-page">
+  <style>
+    .projects-page {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 30px;
+      background: #07553b;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      font-family: "Poppins", sans-serif;
+    }
+
+    .projects-page h1 {
+      text-align: center;
+      color: #ced46a;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .projects-page p {
+      text-align: center;
+      color: #ced46a;
+      font-size: 15px;
+      margin-bottom: 35px;
+    }
+
+    .projects-container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .project-card {
+      background: #fff;
+      width: 300px;
+      border: 2px solid #ced46a;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .project-info {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .project-info h3 {
+      color: #07553b;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .project-info p {
+      color: #444;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .project-info a {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #ced46a;
+      color: #07553b;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .project-info a:hover {
+      background: #07553b;
+      color: #ced46a;
+    }
+
+    @media (max-width: 768px) {
+      .projects-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+
+  <h1>My Projects</h1>
+  <p>Here are some of the projects I've worked on recently.</p>
+
+  <div class="projects-container">
+    <div class="project-card">
+      <img src="Screenshot (3).png" alt="Project 1">
+      <div class="project-info">
+        <h3>Philosophers Biography Website</h3>
+        <p>A web project highlighting famous ancient philosophers like Socrates, Plato, Aristotle, and Machiavelli, with details about their childhood, achievements, and home places.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="Screenshot (4).png" alt="Project 2">
+      <div class="project-info">
+        <h3>Nike Product Landing Page</h3>
+        <p>A stylish Nike-themed landing page designed with HTML and CSS, featuring an attractive product showcase, smooth hover effects, and a modern, user-friendly layout.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="Screenshot (5).png" alt="Project 3">
+      <div class="project-info">
+        <h3>Responsive Website (Media Query Project)</h3>
+        <p>A fully responsive website built using CSS media queries, designed to adapt seamlessly across all screen sizes and devices for an optimal user experience.</p>
+      </div>
+    </div>
+  </div>
+</section>
