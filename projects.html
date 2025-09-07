@@ -1,40 +1,53 @@
 <section class="projects-page">
   <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+    .body {
+      font-family: "Poppins", sans-serif;
+    }
+
     .projects-page {
       max-width: 1100px;
       margin: 50px auto;
       padding: 30px;
-      background: #07553b;
+      background: #faf5ff;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
       font-family: "Poppins", sans-serif;
+      margin-top: 7%;
     }
 
     .projects-page h1 {
       text-align: center;
-      color: #ced46a;
+      color: #1f2937;
       font-size: 28px;
       margin-bottom: 20px;
     }
 
     .projects-page p {
       text-align: center;
-      color: #ced46a;
+      color: #1f2937;
       font-size: 15px;
       margin-bottom: 35px;
     }
 
     .projects-container {
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
       gap: 20px;
       justify-content: center;
-      flex-wrap: wrap;
+      height: auto;
     }
 
     .project-card {
+      display: flex; /* Keep flex for vertical arrangement */
+      flex-direction: column; /* Arrange items from top to bottom */
+      justify-content: flex-start; /* ✅ FIXED: Align content at the top instead of center */
+      align-items: center;
       background: #fff;
       width: 300px;
-      border: 2px solid #ced46a;
+      min-height: 450px; /* ✅ NEW: Make all cards have equal height */
+      border: 1px solid #07553b;
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       overflow: hidden;
@@ -55,70 +68,102 @@
     .project-info {
       padding: 15px;
       text-align: center;
+      flex: 1; /* ✅ NEW: Let project-info stretch and fill remaining space */
     }
 
     .project-info h3 {
-      color: #07553b;
+      color: #1f2937;
       font-size: 18px;
       margin-bottom: 10px;
     }
 
     .project-info p {
-      color: #444;
+      color: #1f2937;
       font-size: 14px;
       margin-bottom: 15px;
     }
 
-    .project-info a {
-      display: inline-block;
+    .btn {
       padding: 10px 15px;
-      background: #ced46a;
-      color: #07553b;
+      background: #07553b;
+      color: #faf5ff;
       border-radius: 6px;
       font-weight: bold;
       text-decoration: none;
       transition: background 0.3s ease, color 0.3s ease;
+      max-width: fit-content;
+      margin-bottom: 15px; /* ✅ NEW: Add spacing below button for balance */
     }
 
-    .project-info a:hover {
-      background: #07553b;
-      color: #ced46a;
+    .btn:hover {
+      background: #ced46a;
+      color: #07553b;
     }
 
+    /* ✅ FIXED: Better responsiveness for smaller screens */
     @media (max-width: 768px) {
       .projects-container {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr; /* ✅ Stack cards vertically on small screens */
+        justify-items: center; /* ✅ Center cards on mobile */
       }
     }
   </style>
 
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav__content">
+      <div class="logo"><a href="#">Umar Bashir</a></div>
+      <label for="check" class="checkbox">
+        <i class="ri-menu-line"></i>
+      </label>
+      <input type="checkbox" name="check" id="check" />
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Heading -->
   <h1>My Projects</h1>
   <p>Here are some of the projects I've worked on recently.</p>
 
+  <!-- Projects Container -->
   <div class="projects-container">
+
+    <!-- Project Card 1 -->
     <div class="project-card">
-      <img src="Screenshot (3).png" alt="Project 1">
+      <img src="Screenshot (3).png" alt="Project 1" />
       <div class="project-info">
         <h3>Philosophers Biography Website</h3>
-        <p>A web project highlighting famous ancient philosophers like Socrates, Plato, Aristotle, and Machiavelli, with details about their childhood, achievements, and home places.</p>
+        <p>A web project highlighting famous ancient philosophers like Socrates, Plato, Aristotle, and Machiavelli, with details about their lives.</p>
       </div>
+      <a class="btn" href="History/index.html">View Project</a>
     </div>
 
+    <!-- Project Card 2 -->
     <div class="project-card">
-      <img src="Screenshot (4).png" alt="Project 2">
+      <img src="Screenshot (4).png" alt="Project 2" />
       <div class="project-info">
         <h3>Nike Product Landing Page</h3>
         <p>A stylish Nike-themed landing page designed with HTML and CSS, featuring an attractive product showcase, smooth hover effects, and a modern, user-friendly layout.</p>
       </div>
+      <a class="btn" href="Nike/nike.html">View Project</a>
     </div>
 
+    <!-- Project Card 3 -->
     <div class="project-card">
-      <img src="Screenshot (5).png" alt="Project 3">
+      <img src="Screenshot (5).png" alt="Project 3" />
       <div class="project-info">
         <h3>Responsive Website (Media Query Project)</h3>
         <p>A fully responsive website built using CSS media queries, designed to adapt seamlessly across all screen sizes and devices for an optimal user experience.</p>
       </div>
+      <a class="btn" href="new/index.html">View Project</a>
     </div>
+
   </div>
 </section>

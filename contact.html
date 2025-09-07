@@ -1,19 +1,37 @@
-<section class="contact-page">
+<link rel="stylesheet" href="styles.css" />
+ <nav>
+      <div class="nav__content">
+        <div class="logo"><a href="#">Umar Bashir</a></div>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </div>
+    </nav><section class="contact-page">
   <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+   
     .contact-page {
       max-width: 700px;
       margin: 50px auto;
-      background: #07553b;
+      background: #faf5ff;
       padding: 40px;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      font-family: Arial, sans-serif;
+      font-family: "Poppins", Arial, sans-serif;
+      margin-top: 7%;
     }
 
     .contact-page h1 {
       text-align: center;
       margin-bottom: 10px;
-      color: #ced46a;
+      color: #1f2937;
       font-size: 28px;
     }
 
@@ -21,7 +39,7 @@
       text-align: center;
       margin-bottom: 30px;
       font-size: 15px;
-      color: #ced46a;
+      color: #1f2937;
     }
 
     .contact-page form {
@@ -32,17 +50,17 @@
 
     .contact-page label {
       font-weight: bold;
-      color: #ced46a;
+      color: #1f2937;
       margin-bottom: 5px;
     }
 
     .contact-page input,
     .contact-page textarea {
       padding: 12px;
-      border: 2px solid #ced46a;
+      border: 1px solid #07553b;
       border-radius: 8px;
       font-size: 15px;
-      background-color: #fff;
+      background-color: #faf5ff;
       color: #07553b; 
       outline: none;
       transition: border-color 0.3s ease, box-shadow 0.3s ease;
@@ -50,14 +68,14 @@
 
     .contact-page input:focus,
     .contact-page textarea:focus {
-      border-color: #ced46a;
-      box-shadow: 0 0 8px rgba(206, 212, 106, 0.5);
+      border-color: #07553b;
+      box-shadow: 0 0 8px rgba(206, 207, 195, 0.5);
     }
 
     .contact-page button {
       padding: 14px;
-      background: #ced46a;
-      color: #07553b; 
+      background: #07553b;
+      color: #faf5ff; 
       border: none;
       border-radius: 8px;
       font-size: 1rem;
@@ -67,8 +85,8 @@
     }
 
     .contact-page button:hover {
-      background: #07553b;
-      color: #ced46a;
+      background: #ced46a;
+      color: #07553b;
       transform: scale(1.05);
     }
 

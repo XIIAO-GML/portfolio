@@ -1,0 +1,151 @@
+/* style.css */
+body {
+  font-family: Georgia, serif;
+  margin: 0;
+  background-color: transparent;
+  color: white;
+}
+
+header {
+  background-color: transparent;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: #fdf6e3;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+main {
+  padding: 2rem;
+}
+
+.card {
+ 
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  max-width: 400px;
+  display: flex;
+  gap: 16px;
+}
+#info {
+  display: flex;
+  flex-direction: column;
+ align-items: end;
+ justify-content: space-between;
+}
+.card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.profile img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  background: transparent;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+body {
+  background-image: url("globe.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100;
+}
+
+.container{
+    display: flex;
+    gap: 16px;
+}
+
+.niccolo-card{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  align-items: flex-start;
+}
+
+.niccolo-card img{
+  width: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.niccolo-card #info {
+  max-width: 600px;
+}
+
+.plato-card{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  align-items: flex-start;
+}
+
+.plato-card img{
+  width: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.plato-card #info{
+  max-width: 600px;
+}
+
+.socrates-card{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  align-items: flex-start;
+}
+
+.socrates-card img{
+  width: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.socrates-card #info{
+  max-width: 600px;
+}
+
+.button-link {
+  
+
+  padding: 10px 20px;
+  background-color: #251902;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  align-items: center; 
+  max-width: fit-content; 
+  
+}
+
+.button-link:hover {
+  background-color: #1f1803;
+  color: black;
+}
+
+.move-box {
+  position: relative;
+  left: 20px; 
+  top: 10px; 
+}
+
+.niccolo-name{
+  text-align: center;
+}

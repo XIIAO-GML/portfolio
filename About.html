@@ -4,20 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me - Umar Bashir</title>
+    <link rel="stylesheet" href="styles.css" />
+ <nav>
+      <div class="nav__content">
+        <div class="logo"><a href="#">Umar Bashir</a></div>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </div>
+    </nav>
   <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
     body {
       font-family: Arial, sans-serif;
       line-height: 1.6;
       margin: 0;
       padding: 0;
+      font-family: "Poppins", sans-serif;
       background: #faf5ff;
-      color: #ced46a;
+      color: #1f2937;
+      margin-top: 7%;
     }
 
     .about-section {
       max-width: 800px;
       margin: 50px auto;
-      background: #07553b;
+      background: #faf5ff;
       padding: 40px;
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -26,7 +45,7 @@
     .about-section h1 {
       font-size: 2rem;
       margin-bottom: 20px;
-      color: #ced46a;
+      color: #1f2937;
       text-align: center;
     }
 
